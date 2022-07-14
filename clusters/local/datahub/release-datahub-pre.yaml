@@ -4,7 +4,7 @@ metadata:
   name: datahub-prerequisites
   namespace: flux-system
 spec:
-  releaseName: datahub
+  releaseName: prerequisites
   chart:
     spec:
       chart: datahub-prerequisites
