@@ -19,3 +19,9 @@ spec:
       retries: 3
   targetNamespace: kong
   values:
+    datahub-frontend:
+      service:
+        type: "ClusterIP"
+    datahub-gms:
+      service:
+        type: "ClusterIP"

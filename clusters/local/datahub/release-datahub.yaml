@@ -19,6 +19,11 @@ spec:
       retries: 3
   targetNamespace: datahub
   values:
-
+    datahub-frontend:
+      service:
+        type: "ClusterIP"
+    datahub-gms:
+      service:
+        type: "ClusterIP"    
   
 
