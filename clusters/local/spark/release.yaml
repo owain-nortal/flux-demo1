@@ -19,3 +19,5 @@ spec:
       retries: 3
   targetNamespace: spark
   values:
+    worker: 
+        replicaCount: 1
