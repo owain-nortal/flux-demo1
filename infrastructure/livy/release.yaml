@@ -20,5 +20,5 @@ spec:
   targetNamespace: livy
   values:
     rbac:
-      create: false
+      create: true
 
