@@ -32,6 +32,7 @@ data:
     echo "$dt - Init script is completed";
 
 
+
   copy_primary_data_to_replica.sh: |
     #!/bin/bash
     set -e
