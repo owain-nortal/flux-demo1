@@ -5,8 +5,7 @@ metadata:
   name: pg-config
   namespace: spark
 data:
-  postgres.conf: |2
-    shared_preload_libraries = 'pgaudit'
+  postgres.conf: |2    
     listen_addresses = '*'
     shared_buffers = 128MB
     
