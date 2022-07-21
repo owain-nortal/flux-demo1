@@ -10,7 +10,7 @@ spec:
       isDisabled: true
    customConfig: pg-config
    database:
-      size: 100Mi
+      size: 101Mi
    env:
     - name: POSTGRES_PASSWORD
       valueFrom:
