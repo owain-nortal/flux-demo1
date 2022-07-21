@@ -83,7 +83,7 @@ spec:
                         -   containerPort: 8080
                     env:
                         -   name: LIGHTER_STORAGE_JDBC_USERNAME
-                            value: pg
+                            value: postgres
                         -   name: LIGHTER_STORAGE_JDBC_PASSWORD
                             value: bahbahblacksheep123
                         -   name: LIGHTER_STORAGE_JDBC_URL
