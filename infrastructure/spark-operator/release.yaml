@@ -19,3 +19,4 @@ spec:
       retries: 9
   targetNamespace: spark-operator
   values:
+    sparkJobNamespace: default
