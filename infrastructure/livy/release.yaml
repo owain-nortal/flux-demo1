@@ -19,6 +19,9 @@ spec:
       retries: 9
   targetNamespace: livy
   values:
+    image:
+      repository: owainperry/livy-spark
+      tag: 0.8.0-incubating-spark_3.3.1_2.12-hadoop_3_cloud
     rbac:
       create: true
 
