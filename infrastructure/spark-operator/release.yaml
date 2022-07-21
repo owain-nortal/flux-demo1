@@ -18,5 +18,8 @@ spec:
     remediation:
       retries: 9
   targetNamespace: spark-operator
-  values:
-    sparkJobNamespace: default
+  values:    
+    sparkJobNamespace: spark-jobs
+    serviceAccounts:
+      spark:
+        name: spark
