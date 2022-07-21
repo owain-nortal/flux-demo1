@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   #name: postgres-10.7-conf
-  name: pg-cm
+  name: pg-config
   namespace: spark
 data:
   postgres.conf: |2
