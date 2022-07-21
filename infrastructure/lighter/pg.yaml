@@ -5,7 +5,7 @@ metadata:
   namespace: spark
 spec:
    replicas: 1
-#   image: "{{ .Values.postgres.image.repository }}:{{ .Values.postgres.image.tag }}" 
+   image: postgres:14.1
    failover:
       isDisabled: true
    customConfig: pg-config
