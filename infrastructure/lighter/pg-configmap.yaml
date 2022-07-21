@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  #name: postgres-10.7-conf
+  name: pg-cm
+  namespace: spark
+data:
+  postgres.conf: |2
+    shared_preload_libraries = 'pgaudit'
+    listen_addresses = '*'
+    shared_buffers = 128MB
+    
+  copy_primary_data_to_replica.sh: |
+    #!/bin/bash
+    set -e
+    echo "no replication configured as this isn't supported for Postgres versions < 12.4"
+  primary_create_replication_role.sh: |
+    #!/bin/bash
+    set -e
+    echo "no replication configured as this isn't supported for Postgres versions < 12.4"
+  promote_replica_to_primary.sh: |
+    #!/bin/bash
+    set -e
+    echo "skipping adding replicas since this isn't supported for Postgres versions < 12.4"
