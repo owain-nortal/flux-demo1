@@ -17,5 +17,6 @@ spec:
   install:
     remediation:
       retries: 3
-  targetNamespace: sealed-secrets
+  targetNamespace: kube-system
   values:
+    secretName: sealed-secrets-key
