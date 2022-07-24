@@ -21,4 +21,11 @@ spec:
   releaseName: edns
   targetNamespace: external-dns
   values:
-    affinity: {}
+    provider: oci 
+    extraVolumes:
+      - name: config
+        secret:
+          secretName: external-dns-config
+    extraMounts:
+    - name: config
+      mountPath: /etc/kubernetes/
