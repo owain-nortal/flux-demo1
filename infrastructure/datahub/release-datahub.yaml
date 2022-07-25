@@ -22,6 +22,20 @@ spec:
     datahub-frontend:
       service:
         type: "ClusterIP"
+      ingress: 
+        enabled: true
+        annotations:          
+          konghq.com/strip-path: "true"
+          kubernetes.io/ingress.class: kong
+          kubernetes.io/tls-acme: "true"
+        hosts:
+          - host: sc02.core.neosdata.io
+            paths: []
+            redirectPaths: []
+        tls: 
+        - secretName: datahub-tls
+          hosts:
+            - sc02.core.neosdata.io
     datahub-gms:
       service:
         type: "ClusterIP"    
