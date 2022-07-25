@@ -30,8 +30,9 @@ spec:
           kubernetes.io/tls-acme: "true"
         hosts:
           - host: sc02.core.neosdata.io
-            paths: []
-            redirectPaths: []
+            paths: 
+              - /
+            #redirectPaths: []
         tls: 
         - secretName: datahub-tls
           hosts:
