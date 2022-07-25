@@ -27,7 +27,9 @@ spec:
         annotations:          
           konghq.com/strip-path: "true"
           kubernetes.io/ingress.class: kong
-          kubernetes.io/tls-acme: "true"
+          certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+          certmanager.k8s.io/acme-challenge-type: http01
+          #kubernetes.io/tls-acme: "true"
         hosts:
           - host: sc02.core.neosdata.io
             paths: 
