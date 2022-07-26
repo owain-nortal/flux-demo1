@@ -148,7 +148,7 @@ spec:
   interval: 10m0s
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: flux-systemkub  
   path: ./infrastructure/sealed-secrets
   prune: true
   validation: client
@@ -181,16 +181,16 @@ spec:
   prune: true
   validation: client  
 ---
-# apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
-# kind: Kustomization
-# metadata:
-#   name: cluster-issuer
-#   namespace: flux-system
-# spec:
-#   interval: 10m0s
-#   sourceRef:
-#     kind: GitRepository
-#     name: flux-system
-#   path: ./infrastructure/cluster-issuer
-#   prune: true
-#   validation: client  
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: cluster-issuer
+  namespace: flux-system
+spec:
+  interval: 10m0s
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  path: ./infrastructure/cluster-issuer
+  prune: true
+  validation: client  
