@@ -22,7 +22,7 @@ spec:
     patch: |-
       - op: replace
         path: "/spec/values/datahub-frontend/ingress/hosts/0/host"
-        value: discover.sc02.core.neosdata.io
+        value: catalog.sc02.core.neosdata.io
       - op: replace
         path: "/spec/values/datahub-frontend/ingress/tls/0/hosts/0"
-        value: discover.sc02.core.neosdata.io
+        value: catalog.sc02.core.neosdata.io
