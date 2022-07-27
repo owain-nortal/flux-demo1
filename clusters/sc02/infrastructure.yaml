@@ -148,7 +148,7 @@ spec:
   interval: 10m0s
   sourceRef:
     kind: GitRepository
-    name: flux-systemkub  
+    name: flux-system
   path: ./infrastructure/sealed-secrets
   prune: true
   validation: client
